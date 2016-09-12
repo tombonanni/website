@@ -1,9 +1,20 @@
 <html>
 <head>
-<title>pixl</title>
+<title>////////////////////////</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" href="common.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
+
+<script>
+jQuery(function ($) {
+  $("#rabbit").hide();
+  $("#matrix").click(function(){
+    $(this).hide();
+    $("#rabbit").show();
+  });
+})
+</script>
 
 <body bgcolor="#FFFFFF">
 <p>&nbsp;</p>
@@ -11,17 +22,22 @@
   <table width="600" border="0">
     <tr>
       <td>
-        <p align="center">PIXL</p>
+        <p class= "noselect" align="center">PIXL / SPACE</p>
         <table style="bottom: 50px;" width="100%" border="0">
           <tr>
             <td width="55%" valign="top">
-              <div align="center"><img src="bg.png" style="max-width: none; border-color: #e0e0e0; border-style: outset white;" border="50"></div>
+              <div align="center"><img class="noselect" src="bg.jpg" style="max-width: none; border-color: pink; border-style: outset white;" border="50"></div>
             </td>
           </tr>
+	  <tr>
+	    <td>don't click <a id="matrix" href="#">here</a></td>
+	  </tr>
         </table>
       </td>
     </tr>
   </table>
+
 </div>
+<div id="rabbit"><a href="#"><img style="position:relative;left:171em;top:300px;width:1%;height:auto;" src="rabbit.png"></img></a></div>
 </body>
 </html>
