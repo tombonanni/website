@@ -3,6 +3,7 @@ BODY {
 	background-color: #000000;
 	font-family: "Courier New", Courier, mono;
 	font-size: 11px;
+	overflow: hidden;
 	}
 
 /*---------------------------------------------------------------------------*/

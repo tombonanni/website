@@ -13,6 +13,9 @@ jQuery(function ($) {
     $(this).hide();
     $("#rabbit").show();
   });
+  $("#rabbit").click(function(){
+    window.open("https://www.google.com", "_self");
+  });
 })
 </script>
 
@@ -26,7 +29,7 @@ jQuery(function ($) {
         <table style="bottom: 50px;" width="100%" border="0">
           <tr>
             <td width="55%" valign="top">
-              <div align="center"><img class="noselect" src="bg.jpg" style="max-width: none; border-color: pink; border-style: outset white;" border="50"></div>
+              <div align="center"><img class="noselect" src="bg.jpg" style="max-width: none; border-color: pink; border-style: outset white;" border="100"></div>
             </td>
           </tr>
 	  <tr>
@@ -38,6 +41,6 @@ jQuery(function ($) {
   </table>
 
 </div>
-<div id="rabbit"><a href="#"><img style="position:relative;left:171em;top:300px;width:1%;height:auto;" src="rabbit.png"></img></a></div>
+<div id="rabbit"><img style="position:fixed;bottom:10;right:10;width:1%;height:auto;" src="rabbit.png"></img></div>
 </body>
 </html>
